@@ -35,7 +35,7 @@ public double calculateCommision()
 		}
 		return commision;
 	
-	}
+	
 		public static void main(String args[])
 		{
 			Commision employee=new Commision();
