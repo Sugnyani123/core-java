@@ -7,7 +7,7 @@ public class CircleDemo
 	{
 		Scanner sc=new Scanner(System.in);
 		Circle c=new Circle();
-		System.out.println("Enetr the radius of circle");
+		System.out.println("Eneter the radius of circle");
 		
 		double r=sc.nextDouble();
 		c.setRadius(r);
