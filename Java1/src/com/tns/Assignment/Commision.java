@@ -2,53 +2,55 @@ package com.tns.Assignment;
 
 import java.util.Scanner;
 
-public class Commision {
+public class Commision 
+{
 private String name;
 private String address;
-private String phone;
-private double salesAmount;
+private long phone;
+private double sales_Amount;
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getAddress() {
+	return address;
+}
+public void setAddress(String address) {
+	this.address = address;
+}
+public long getPhone() {
+	return phone;
+}
+public void setPhone(long phone) {
+	this.phone = phone;
+}
+public double getSales_Amount() {
+	return sales_Amount;
+}
+public void setSales_Amount(double sales_Amount) {
+	this.sales_Amount = sales_Amount;
+}
+public double calculateCommision()
 
-
-public void acceptDetail()
 {
-	Scanner sc=new Scanner(System.in);
-	System.out.println("Enter name:");
-	name=sc.nextLine();
-	System.out.println("Ebter thr address:");
-	address=sc.nextLine();
-	System.out.println("Enter the phone number");
-	phone=sc.nextLine();
-	System.out.println("Enter the sales amount");
-	salesAmount=sc.nextDouble();
-}
-
-public double calculateCommision() 
+double commision;
+if(sales_Amount>=100000)
 {
-	double commision=0;
-	if (salesAmount>=100000) {
-		commision=salesAmount*0.10;
-		else if(salesAmount>=500000) {
-			commision=salesAmount*0.05;
-		}
-		else if(salesAmount>=30000) {
-			commision=salesAmount*0.03;
-		}
-		return commision;
-	
-	
-		public static void main(String args[])
-		{
-			Commision employee=new Commision();
-			employee.acceptDetails();
-			double commision1=employee.calculateCommision();
-			System.out.println("Commision:$"+commision1);
-		}
-	}
-
-private void acceptDetails() {
-	// TODO Auto-generated method stub
-	
+	commision=sales_Amount*10/100;
 }
+else if(sales_Amount>=50000  && sales_Amount<100000)
+{
+	commision=sales_Amount*5/100;
 }
-	
-	
+else if(sales_Amount>=30000 &&sales_Amount<50000)
+{
+commision=sales_Amount*3/100;
+}
+else
+{
+	commision=0;
+}
+return commision;
+}}
