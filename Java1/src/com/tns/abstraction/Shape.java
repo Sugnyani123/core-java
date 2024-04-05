@@ -5,7 +5,16 @@ public abstract class Shape {
 	 protected float area;//
 	void show()//concrete method or non-abstract method
 	{
-		System.out.println("The area of shape is "+area);
+		System.out.println("The area of shape is " + area);
+	}
+	
+	public Shape() {
+		super();
+	}
+
+	public Shape(float area) {
+		super();
+		this.area = area;
 	}
 
 }

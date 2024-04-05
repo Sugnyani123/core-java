@@ -16,7 +16,7 @@ public class Square extends Shape  {
 	}
 void calArea()
 {
-	area=side*side;
+	area = side*side;
 }
 
 
