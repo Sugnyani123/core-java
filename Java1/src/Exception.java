@@ -8,9 +8,11 @@ public class Exception {
 		{
 		
 		int a=42/d;
+		System.out.println("now");
 		}
-		catch(ArthhmeticExcetion ob) {
-		System.out.println("Will not be printed");
+		catch(ArithmeticException ob) {
+		System.out.println("Exception is caught"+ob);
 	}
+		System.out.println("now it will printed");
 	}
 }

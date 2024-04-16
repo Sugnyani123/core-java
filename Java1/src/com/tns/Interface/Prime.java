@@ -13,9 +13,6 @@ public class Prime implements Amazon
 	public void subscribe() {
 		// TODO Auto-generated method stub
 		
-	}
+	}}
 	
-}
-{
 
-}

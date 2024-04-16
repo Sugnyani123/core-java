@@ -27,7 +27,7 @@ c.setAddress(address);
 c.setPhone(phone);
 c.setSales_Amount(salesAmount);
 double commision=c.calculateCommision();
-System.out.println("The Commision for" + Sales_Amt + " is:"+commision);
+System.out.println("The Commision for" + salesAmount + " is:"+commision);
 
       }
 	}

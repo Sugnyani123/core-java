@@ -1,1 +1,0 @@
-package com.tns.staticmethod;
